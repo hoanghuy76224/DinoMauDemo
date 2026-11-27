@@ -1,6 +1,6 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Dino Studio//Bao Huong Wedding//VI
+PRODID:-//Dino Studio//Demo Wedding//VI
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:baohuong-20261213@khunglongcon.com
@@ -8,7 +8,7 @@ DTSTAMP:20261115T140000Z
 DTSTART:20261213T040000Z
 DTEND:20261213T070000Z
 SUMMARY:Lễ báo hỷ Việt Phúc & Hương Giang
-LOCATION:Hoa Hồng - Sảnh 7 Lily\, 360 Phan Văn Trị\, TP. HCM
+LOCATION:Hoa Hồng - Sảnh Hoa Hồng\, 123 đường Hạnh Phúc\, TP. HCM
 DESCRIPTION:Đón khách 11:00. Khai tiệc 12:00. Chủ Nhật 13/12/2026.
 END:VEVENT
 END:VCALENDAR

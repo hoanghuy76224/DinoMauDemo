@@ -496,7 +496,7 @@ body.locked #cover{opacity:0}
     e.preventDefault();
     var ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Thiep cuoi//VI','BEGIN:VEVENT','UID:han-dang-20270327@thiep',
       'DTSTAMP:20261118T000000Z','DTSTART;TZID=Asia/Ho_Chi_Minh:20270327T173000','DTEND;TZID=Asia/Ho_Chi_Minh:20270327T210000',
-      'SUMMARY:Lễ Thành Hôn Giang & Phúc','LOCATION:Nhà Hàng Hoa Hồng - Sảnh Hoa Hồng - Tầng 02\\, 123 đường Hạnh Phúc\\, Phường Phú Lâm\\, TP. HCM',
+      'SUMMARY:Lễ Thành Hôn Giang & Phúc','LOCATION:Nhà Hàng Hoa Hồng - Sảnh Hoa Hồng - Tầng 02\\, 123 đường Hạnh Phúc\\, Phường Tân Định\\, TP. HCM',
       'END:VEVENT','END:VCALENDAR'].join('\r\n');
     var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([ics],{type:'text/calendar;charset=utf-8'}));
     a.download='Le-Thanh-Hon-Han-Dang.ics';document.body.appendChild(a);a.click();a.remove();
