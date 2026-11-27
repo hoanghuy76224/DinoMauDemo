@@ -1,0 +1,29 @@
+.gift{background:linear-gradient(180deg,#f6efe6,#efeaf4);padding:16vh 22px 18vh;text-align:center;overflow:hidden}
+.gift .head{font-family:'Archivo',sans-serif;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--film-warm);margin-bottom:18px}
+.gift h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(34px,7vw,56px);color:var(--film-cream);line-height:1.15;margin-bottom:18px}
+.gift h2 em{font-style:italic;color:#a3162c}
+.gift .desc{font-family:'Fraunces',serif;font-style:italic;font-size:16px;line-height:1.7;max-width:460px;margin:0 auto;color:var(--film-cream);opacity:.85}
+.lx-stage{--lx-lift:460px;width:min(250px,64vw);margin:46px auto 0;padding-top:24px;scroll-margin-top:90px;transition:padding-top .45s cubic-bezier(.22,.68,.25,1)}
+.lx-stage.ready{padding-top:var(--lx-lift)}
+.lx-env{position:relative;aspect-ratio:575/1111;perspective:900px;isolation:isolate}
+.lx-env::before{content:'';position:absolute;inset:0;background:#870d25;border-radius:6px;z-index:0;box-shadow:0 22px 40px rgba(110,10,30,.24)}
+.lx-front{position:absolute;inset:0;width:100%;height:100%;border-radius:6px;z-index:3;display:block;pointer-events:none}
+.lx-flap{position:absolute;left:0;width:100%;bottom:100%;z-index:4;transform-origin:bottom center;transform:rotateX(180deg);transition:transform .45s cubic-bezier(.4,0,.2,1),z-index 0s .22s;backface-visibility:visible;display:block;pointer-events:none}
+.lx-stage.unsealed .lx-flap{transform:rotateX(0deg);z-index:1}
+/* The card stays behind the front pocket for the whole journey. */
+.lx-card-window{position:absolute;left:0;right:0;top:calc(-1 * var(--lx-lift));bottom:0;z-index:2;overflow:hidden;pointer-events:none}
+.lx-card{position:absolute;left:5%;right:5%;top:calc(var(--lx-lift) + 14px);background:#fffaf2;border:1px solid #ead9b8;border-radius:6px;padding:20px 12px 14px;transform:translateY(0);transition:transform 1.05s cubic-bezier(.22,.68,.22,1);box-shadow:0 10px 26px rgba(0,0,0,.15);pointer-events:auto;will-change:transform}
+.lx-stage.open .lx-card{transform:translateY(calc(-100% - 32px))}
+.lx-eyebrow{display:block;font:600 10px 'Archivo',sans-serif;letter-spacing:.22em;color:#a3162c}
+.lx-card h3{font-family:'Dancing Script',cursive;font-size:25px;font-weight:600;color:var(--film-cream);margin:6px 0 10px}
+.lx-card img{width:100%;max-width:200px;aspect-ratio:1;object-fit:contain;display:block;margin:0 auto;background:#fff}
+.lx-bank{font:10px 'Archivo',sans-serif;letter-spacing:.18em;margin:10px 0 4px;color:var(--film-cream)}
+.lx-acc{font:500 18px 'Archivo',sans-serif;letter-spacing:.05em;color:var(--film-cream)}
+.lx-actions{display:flex;gap:8px;justify-content:center;margin-top:12px}
+.lx-actions button{border:1px solid #d9bd84;background:#fff;color:var(--film-cream);padding:10px 10px;font:11px 'Archivo',sans-serif;border-radius:99px;min-height:40px;cursor:pointer}
+.lx-status{font:10px/1.6 'Archivo',sans-serif;min-height:16px;margin-top:8px;color:var(--film-warm)}
+.lx-hit{position:absolute;inset:0;z-index:6;background:none;border:0;cursor:pointer;border-radius:6px}
+.lx-stage.ready .lx-hit{pointer-events:none}
+.lx-toggle:disabled{cursor:wait;opacity:.65}
+.lx-toggle{margin-top:26px;background:none;border:0;border-bottom:1px solid #a3162c;color:#a3162c;padding:10px 0;font:600 10px 'Archivo',sans-serif;letter-spacing:.18em;cursor:pointer;min-height:44px}
+@media(prefers-reduced-motion:reduce){.lx-stage,.lx-stage *{transition-duration:.01ms!important;transition-delay:0ms!important}}
